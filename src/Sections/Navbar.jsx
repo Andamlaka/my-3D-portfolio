@@ -15,7 +15,7 @@ const NavItems = () => {
   )
 }
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
 
   const toggleMenu = () => {
     setIsOpen((prevIsOpen) => !prevIsOpen)
