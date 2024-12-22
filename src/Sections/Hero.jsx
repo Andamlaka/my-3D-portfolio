@@ -9,7 +9,7 @@ import Target from '../components/Target'
 import ReactLogo from '../components/ReactLogo'
 import Cube from '../components/cube'
 import Rings from '../components/Rings'
-import HeroCamera from '../components/HeroCamera'
+import Button from '../components/Button'
 
 const Hero = () => {
   const isSmall = useMediaQuery({ maxWidth: '404px' })
@@ -18,34 +18,31 @@ const Hero = () => {
 
   const sizes = calculateSizes(isSmall, isMobile, isTablet)
 
-  // Use React's useTransition hook for smooth state transitions
-  const [isPending, startTransition] = useTransition()
 
   return (
-    <section className="min-h-screen w-full flex flex-col relative">
-      <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
+    <section className="min-h-screen w-full mt-0 flex flex-col relative">
+      <div className="w-full mx-auto  flex flex-col sm:mt-36 mt-20 c-space gap-3">
         <p className="sm:text-3xl text-3xl font-medium text-white text-center font-generalsans">
           Hi, I am Andargachew <span className="waving-hand">✋</span>
         </p>
         <p className="hero_tag text-gray_gradient">Building web apps</p>
       </div>
 
-      <div className="w-full h-full mt-28 absolute inset-0">
+      <div className="w-full h-full  absolute inset-0">
         {/* Canvas for 3D scene */}
         <Canvas className="w-full h-full">
           {/* Suspense for all asynchronous operations */}
           <Suspense fallback={<CanvasLoader />}>
             <PerspectiveCamera makeDefault position={[0, 0, 20]} />
-            <HeroCamera>
-              {/* Suspense for HackerRoom */}
-              <Suspense fallback={<CanvasLoader />}>
-                <HackerRoom
-                  position={sizes.deskPosition}
-                  rotation={[0, -Math.PI, 0]}
-                  scale={sizes.deskScale}
-                />
-              </Suspense>
-            </HeroCamera>
+
+            {/* Suspense for HackerRoom */}
+            <Suspense fallback={<CanvasLoader />}>
+              <HackerRoom
+                position={sizes.deskPosition}
+                rotation={[0, -Math.PI, 0]}
+                scale={sizes.deskScale}
+              />
+            </Suspense>
 
             {/* Suspense for Target */}
             <Suspense fallback={<CanvasLoader />}>
@@ -59,6 +56,12 @@ const Hero = () => {
             <directionalLight intensity={0.5} position={[10, 10, 10]} />
           </Suspense>
         </Canvas>
+      </div>
+      <div className="absolute   bottom-7 left-0 right-0 w-full z-10 c-space">
+        <a href="#contact" className="w-full">
+          <Button  name="Let's work together" isBeam 
+          containerClass='sm:fit w-full sm:min-w-96'/>
+        </a>
       </div>
     </section>
   )
