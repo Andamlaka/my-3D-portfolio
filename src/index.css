@@ -79,7 +79,7 @@ body {
 
   /* projects section  */
   .arrow-btn {
-    @apply w-10 h-10 p-3 cursor-pointer active:scale-95 transition-all rounded-full arrow-gradient;
+    @apply w-10 h-10 p-3 cursor-pointer active:scale-95 transition-all rounded-full arrow-gradient z-10;
   }
 
   .tech-logo {
