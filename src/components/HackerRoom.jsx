@@ -1,10 +1,10 @@
 import { useGLTF, useTexture } from '@react-three/drei';
 
 function HackerRoom(props) {
-  const { nodes, materials } = useGLTF('/models/hacker-room.glb');
+  
   const monitortxt = useTexture('textures/desk/monitor.png');
   const screenTxt = useTexture('textures/desk/screen.png');
-
+  const { nodes, materials } = useGLTF('/models/hacker-room.glb');
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.screen_screens_0.geometry} material={materials.screens}>

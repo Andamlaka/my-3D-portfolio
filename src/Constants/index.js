@@ -58,11 +58,11 @@ export const clientReviews = [
 
 export const myProjects = [
   {
-    title: 'Podcastr - AI Podcast Platform',
-    desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
+    title: 'Amazon Clone - User Friendly Ecommerce Website',
+    desc: 'Amazon Clone offers a seamless shopping experience with an intuitive interface and real-time updates.It ensures fast performance and scalability for e-commerce businesses.',
     subdesc:
-      'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
-    href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+      'Built as a unique Software-as-a-Service app with React JS, this website is designed for optimal performance and scalability.',
+    href: 'https://amazon-clone-ande.vercel.app/',
     texture: '/textures/project/project1.mp4',
     logo: '/assets/project-logo1.png',
     logoStyle: {
@@ -79,18 +79,18 @@ export const myProjects = [
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
+        name: 'CSS 3',
+        path: 'assets/css.png',
       },
       {
         id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
+        name: 'javascript',
+        path: '/assets/javascript.png',
       },
       {
         id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: 'FireBase',
+        path: '/assets/firebase.png',
       },
     ],
   },
