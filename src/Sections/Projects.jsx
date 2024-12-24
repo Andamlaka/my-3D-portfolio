@@ -1,5 +1,9 @@
-import React, { useState } from 'react';
+import React, { Suspense, useState } from 'react';
 import { myProjects } from '../constants/index.js';
+import {Canvas} from "@react-three/fiber";
+import {Center, OrbitControls} from "@react-three/drei";
+import DemoComputer from '../components/DemoComputer.jsx';
+import CanvasLoader from '../components/CanvasLoader.jsx';
 
 const Projects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -97,6 +101,23 @@ const Projects = () => {
               />
             </button>
           </div>
+        </div>
+        <div className="border border-black-300 bg-black-200 rounded-lg h-96 md:h-full">
+     <Canvas>
+     <ambientLight intensity={Math.PI/2} />
+     <directionalLight position={[10, 10, 5 ]} />
+     <Center>
+      <Suspense fallback={<CanvasLoader />}>
+      <group scale={2}
+      position={[0,-3,0]}
+        rotation={[0, -1, 0]}   >
+        <DemoComputer texture={currentProject.texture}/>
+      </group>
+      </Suspense>
+     </Center>
+    <OrbitControls maxPolarAngle={Math.PI/2} 
+    enableZoom={false}/>
+     </Canvas>
         </div>
       </div>
     </section>

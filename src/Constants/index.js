@@ -96,7 +96,7 @@ export const myProjects = [
   },
   {
     title: 'ESHOP- Ecommerce Website',
-    dec:'ESHOP is an intuitive and user-friendly e-commerce platform designed to bring convenience and variety right to your fingertips. ',
+    desc:'ESHOP is an intuitive and user-friendly e-commerce platform designed to bring convenience and variety right to your fingertips. ',
     subdesc:
       'With ESHOP, users can experience shoping online, where all goods and services are delivered through the internet. It is built with React JS, Tailwind css and bootstraps.',
     href: 'https://my-first-eshop-using-tailwind-css.netlify.app/',

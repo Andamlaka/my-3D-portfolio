@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import Globe from 'react-globe.gl'
 import Button from './Button'
+// import {Canvas} from "@react-three/fiber"
+// import {OrbitControls} from "@react-three/drei"
 
 
 const About = () => {
@@ -17,7 +19,7 @@ const About = () => {
         },2000)
   }
   return (
-    <section className="c-space my-20">
+    <section className="c-space my-20" id='about'>
       <div
         className="grid xl:grid-cols-3 xl:grid-rows-6
  md:grid-cols-2 grid-cols-1 gap-5 h-full"
@@ -70,10 +72,11 @@ const About = () => {
                 showAtmosphere
                 showGraticules
                 showLand
-                OrbitalControls
+                OrbitControls
                 globeImageUrl="//unpkg.com/three-globe/example/img/earth-day.jpg"
                 bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
               />
+              
             </div>
             <div>
               <p className="grid-headtext">

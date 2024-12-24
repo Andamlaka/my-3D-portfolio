@@ -4,7 +4,7 @@ import { PerspectiveCamera } from '@react-three/drei'
 import HackerRoom from '../components/HackerRoom'
 import CanvasLoader from '../components/CanvasLoader'
 import { useMediaQuery } from 'react-responsive'
-import { calculateSizes } from '../Constants/index'
+import { calculateSizes } from '../Constants/index.js'
 import Target from '../components/Target'
 import ReactLogo from '../components/ReactLogo'
 import Cube from '../components/cube'
@@ -58,7 +58,7 @@ const Hero = () => {
         </Canvas>
       </div>
       <div className="absolute   bottom-7 left-0 right-0 w-full z-10 c-space">
-        <a href="#contact" className="w-full">
+        <a href="#about" className="w-full">
           <Button  name="Let's work together" isBeam 
           containerClass='sm:fit w-full sm:min-w-96'/>
         </a>
