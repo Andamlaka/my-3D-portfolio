@@ -29,7 +29,10 @@ const Navbar = () => {
             className="text-neutral-400 font-bold
                  text-xl hover:text-white transition-colors"
           >
-            Andargachew
+          <div className='flex gap-2'>
+            <img src="/public/profile.JPG" alt="logo" className="w-8 h-8 rounded-full" />
+            <p>Andargachew</p>
+            </div>
           </a>
           <button
             onClick={toggleMenu}
