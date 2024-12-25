@@ -46,17 +46,11 @@ const Contact = () => {
   };
 
   return (
-    <section className="c-space my-20">
+    <section className="c-space my-20 bg-[#0E0E10] min-h-screen w-[80vw] flex items-center justify-center mx-auto rounded-lg shadow-lg p-8">
       <div className="relative min-h-screen flex items-center justify-center flex-col">
-        <img
-          src="/assets/terminal.png"
-          alt="terminal background"
-          className="absolute inset-0 min-h-screen"
-        />
-
         <div className="contact-container">
-          <h3 className="head-text">Let's talk</h3>
-          <p className="text-lg text-white-600 mt-3">
+          <h3 className="head-text text-3xl font-semibold">Let's talk</h3>
+          <p className="text-lg text-gray-600 mt-3">
             Whether you're looking to build a new website, improve your existing platform, or bring a unique project to life, I'm here to help.
           </p>
 
@@ -67,7 +61,7 @@ const Contact = () => {
           >
             {/* Name Field */}
             <label className="space-y-3">
-              <span className="field-label">Full Name</span>
+              <span className="field-label text-lg font-medium">Full Name</span>
               <input
                 type="text"
                 name="name"
@@ -81,7 +75,7 @@ const Contact = () => {
 
             {/* Email Field */}
             <label className="space-y-3">
-              <span className="field-label">Email</span>
+              <span className="field-label text-lg font-medium">Email</span>
               <input
                 type="email"
                 name="email"
@@ -95,7 +89,7 @@ const Contact = () => {
 
             {/* Message Field */}
             <label className="space-y-3">
-              <span className="field-label">Your message</span>
+              <span className="field-label text-lg font-medium">Your message</span>
               <textarea
                 name="message"
                 value={form.message}
@@ -109,7 +103,7 @@ const Contact = () => {
 
             {/* Submit Button */}
             <button
-              className="field-btn"
+              className="field-btn py-3 px-6 rounded-lg bg-blue-600 text-white flex items-center justify-center space-x-3"
               type="submit"
               disabled={loading}
             >
@@ -117,7 +111,7 @@ const Contact = () => {
               <img
                 src="/assets/arrow-up.png"
                 alt="arrow-up"
-                className="field-btn_arrow"
+                className="field-btn_arrow w-5 h-5"
               />
             </button>
           </form>

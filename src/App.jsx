@@ -4,6 +4,8 @@ import Hero from './Sections/Hero'
 import About from './components/About'
 import Projects from './Sections/Projects'
 import Contact from './Sections/Contact'
+import Footer from './Sections/footer'
+
 
 const App = () => {
   return (
@@ -12,8 +14,9 @@ const App = () => {
      <Hero/> 
      <About/> 
      <Projects/>
-
+    
      <Contact />
+     <Footer/>
     </div>
   )
 }
