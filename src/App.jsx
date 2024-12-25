@@ -7,6 +7,7 @@ import Contact from './Sections/Contact'
 import Footer from './Sections/Footer'
 
 
+
 const App = () => {
   return (
     <div className=" max-w-7xl mx-auto ">

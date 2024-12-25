@@ -7,7 +7,7 @@ import { useMediaQuery } from 'react-responsive'
 import { calculateSizes } from '../Constants/index.js'
 import Target from '../components/Target'
 import ReactLogo from '../components/ReactLogo'
-import Cube from '../components/cube'
+import Cube from '../components/Cube'
 import Rings from '../components/Rings'
 import Button from '../components/Button'
 
