@@ -30,7 +30,7 @@ const Navbar = () => {
                  text-xl hover:text-white transition-colors"
           >
           <div className='flex gap-2'>
-            <img src="/public/profile.jpg" alt="logo" className="w-8 h-8 rounded-full" />
+            <img src="/profile.jpg" alt="logo" className="w-8 h-8 rounded-full" />
             <p>Andargachew</p>
             </div>
           </a>
